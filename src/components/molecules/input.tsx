@@ -14,7 +14,7 @@ const Input = ({ placeholder, icon, type, width }: InputType): JSX.Element => {
       <input
         type={type}
         placeholder={placeholder}
-        className={`flex-1 input text-sm bg-transparent focus:outline-none`}
+        className={`flex-1 input text-sm bg-transparent text-white focus:outline-none`}
       />
     </div>
   )
