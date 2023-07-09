@@ -34,7 +34,7 @@ const Page = (): JSX.Element => {
         />
         <br />
         <p className="text-right">
-          <Link className="text-[#FFE5B1]" href={'/'}>
+          <Link className="text-[#FFE5B1]" href={'/forgot'}>
             Forgot Password?
           </Link>
         </p>
