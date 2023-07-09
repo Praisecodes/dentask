@@ -1,9 +1,17 @@
+'use client'
+
 import { Input } from "@/components/molecules";
 import { HiOutlineEnvelope } from 'react-icons/hi2';
 import { CiLock } from 'react-icons/ci';
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Page = (): JSX.Element => {
+  const router = useRouter();
+  const handleLogin = async (e:any) => {
+    e.preventDefault();
+    router.push('/home');
+  }
 
   return (
     <section className="w-full flex flex-col items-center">
@@ -39,7 +47,10 @@ const Page = (): JSX.Element => {
           </Link>
         </p>
         <br />
-        <button className={`btn w-full text-black text-base bg-[#FFE5B1] rounded-md normal-case hover:bg-[#FFE5B1]`}>
+        <button 
+          className={`btn w-full text-black text-base bg-[#FFE5B1] rounded-md normal-case hover:bg-[#FFE5B1]`}
+          onClick={(e)=>{handleLogin(e)}}
+        >
           Login
         </button> <br /><br />
         <div className="flex items-center justify-center">
