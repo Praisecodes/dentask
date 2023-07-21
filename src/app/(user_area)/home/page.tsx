@@ -54,8 +54,8 @@ const Page = (): JSX.Element => {
     <>
       {/**Count Section */}
       <section className="w-full flex justify-center items-center flex-wrap">
-        {taskMeasurements.map((taskMeasurement) => (
-          <div className={`bg-[#2C3542] text-[#FFFFFF80] flex rounded-md items-center mx-2 py-5 w-[18rem] px-4`}>
+        {taskMeasurements.map((taskMeasurement, index) => (
+          <div key={index} className={`bg-[#2C3542] text-[#FFFFFF80] flex rounded-md items-center mx-2 py-5 w-[18rem] px-4`}>
             <p className="text-3xl bg-[#FFE5B14D] p-3 text-[#FFE5B1] border border-[#FFE5B1] rounded-full">
               {taskMeasurement.icon}
             </p>
