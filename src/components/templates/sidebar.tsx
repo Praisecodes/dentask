@@ -34,7 +34,7 @@ const SideBar = (): JSX.Element => {
   const pathname = usePathname();
 
   return (
-    <section className="w-[23vw] h-[100vh] bg-[#2B3441] px-4 py-5">
+    <section className="w-[21vw] h-[100vh] bg-[#2B3441] px-4 py-5">
       <img src="/images/logo_var.svg" alt="DenTask Logo" className="w-[10rem]" />
       <br />
       <section>

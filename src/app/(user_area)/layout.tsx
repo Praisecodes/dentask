@@ -12,7 +12,7 @@ const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => {
     <main className="bg-[#212832] flex h-[100vh] w-[100vw]">
       <SideBar />
 
-      <section className="w-[77vw] overflow-x-hidden">
+      <section className="w-[79vw] overflow-x-hidden">
         <header className="h-[12.4vh] px-6 flex justify-between items-center border-b border-b-[#455A6480]">
           <h3 className="text-white text-xl">
             {pathname == '/home' ? "Home Task" : pathname.split('/')[1].charAt(0).toUpperCase() + pathname.split('/')[1].slice(1,)}
