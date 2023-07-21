@@ -38,8 +38,8 @@ const SideBar = (): JSX.Element => {
       <img src="/images/logo_var.svg" alt="DenTask Logo" className="w-[10rem]" />
       <br />
       <section>
-        {options.map((option) => (
-          <Link href={option.route} className="">
+        {options.map((option, index) => (
+          <Link key={index} href={option.route} className="">
             <p className={`py-3 px-2 flex items-center text-lg w-[78%] rounded-md my-2 hover:bg-[#475464] duration-100 ${pathname==option.route ? 'bg-[#475464] text-[#FFE5B1]': 'bg-transparent'}`}>
               <span className="text-2xl mr-4">
                 {option.icon}
