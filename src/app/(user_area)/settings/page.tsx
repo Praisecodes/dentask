@@ -69,7 +69,7 @@ const Page = (): JSX.Element => {
 
           <div className={`w-full py-3 px-4 my-3 bg-[#2B3441] text-[#ffffff77]`}>
             <p className={`text-sm`}>
-              <b className={`text-[#ffffff88]`}>Note:</b> You'll get a confirmation email within 30 minutes
+              <b className={`text-[#ffffff88]`}>Note:</b> You&apos;ll get a confirmation email within 30 minutes
             </p>
           </div>
         </section>
