@@ -1,4 +1,5 @@
 import Navbar from "@/components/molecules/Navbar";
+import Image from "next/image";
 
 const Page = (): JSX.Element => {
   return (
@@ -18,7 +19,7 @@ const Page = (): JSX.Element => {
           </p>
         </div>
         <div className="items-center mt-10 w-4/5 m-auto">
-          <img src="/images/Dashboard.png" alt="Logo" />
+          <Image width={10} height={10} src="/images/Dashboard.png" alt="Logo" />
         </div>
 
       </div>

@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -12,7 +13,7 @@ const SideView = (): JSX.Element => {
         <h3 className="text-xl font-bold text-[#212832]">
           Welcome {pathname == '/' ? 'Back' : ''} To
         </h3>
-        <img src="/images/logo.svg" alt="Dentask Logo" className="w-[16rem]" />
+        <Image width={10} height={10} src="/images/logo.svg" alt="Dentask Logo" className="w-[16rem]" />
       </div>
 
       <p className={`text-base text-black py-2`}>

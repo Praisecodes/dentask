@@ -7,6 +7,7 @@ import { IoFileTrayFullOutline } from 'react-icons/io5';
 import { VscSettings } from 'react-icons/vsc';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const SideBar = (): JSX.Element => {
   const [options] = useState<any[]>([
@@ -35,7 +36,7 @@ const SideBar = (): JSX.Element => {
 
   return (
     <section className="w-[21vw] h-[100vh] bg-[#2B3441] px-4 py-5">
-      <img src="/images/logo_var.svg" alt="DenTask Logo" className="w-[10rem]" />
+      <Image width={10} height={10} src="/images/logo_var.svg" alt="DenTask Logo" className="w-[10rem]" />
       <br />
       <section>
         {options.map((option, index) => (

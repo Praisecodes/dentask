@@ -4,6 +4,7 @@ import { Button } from "@/components/atoms";
 import { SettingsBoard } from "@/components/templates";
 import { FiUploadCloud } from 'react-icons/fi';
 import { BsCheck2 } from 'react-icons/bs';
+import Image from "next/image";
 
 const Page = (): JSX.Element => {
   return (
@@ -12,7 +13,7 @@ const Page = (): JSX.Element => {
         {/**Upload Profile Photo */}
         <div className={`flex items-center`}>
           <div className={`w-16 h-16 rounded-full bg-[#8CAAB9]`}>
-            <img src="/images/emptys/no-photo.svg" alt="" className={`w-full p-4`} />
+            <Image width={10} height={10} src="/images/emptys/no-photo.svg" alt="" className={`w-full p-4`} />
           </div>
 
           <div className={`mx-7 w-fit my-3`}>
