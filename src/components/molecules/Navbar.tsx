@@ -1,14 +1,16 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
-    <div className="flex justify-between ">
+    <header className="flex justify-between items-center">
       <div>
         <img src="/images/logo_var.svg" alt="Logo" />
       </div>
 
-      <button className=" text-white border-[#FFE5B1] border bg-[#858173] px-5 py-0 ">
+      <Link href={`/login`} className=" text-white border-[#FFE5B1] border bg-[#858173] px-8 py-3 ">
         Get Started
-      </button>
-    </div>
+      </Link>
+    </header>
   );
 }
 
