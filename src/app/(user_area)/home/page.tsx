@@ -106,7 +106,7 @@ const Page = (): JSX.Element => {
               ?
               (
                 <Empty title="No tasks has been found" image="/images/emptys/no-task.svg">
-                  Click to add <DLink href={'/home/new_task'}>New task</DLink>
+                  Click to add <DLink href={'/new_task'}>New task</DLink>
                 </Empty>
               )
               :
@@ -132,7 +132,7 @@ const Page = (): JSX.Element => {
               ?
               (
                 <Empty title="No announcements here" image="/images/emptys/no-task.svg">
-                  Click to add <DLink href={'/'}>New annoncement</DLink>
+                  Click to add <DLink href={'/new_announcement'}>New annoncement</DLink>
                 </Empty>
               )
               :
@@ -165,7 +165,7 @@ const Page = (): JSX.Element => {
             ?
             (
               <Empty title="No teams has been created" image="/images/emptys/no-teams.svg">
-                Click to add <DLink href={'/'}>New team</DLink>
+                Click to add <DLink href={'/new_team'}>New team</DLink>
               </Empty>
             )
             :
