@@ -11,7 +11,7 @@ const PasswordInput = ({ placeholder, className }: InputProps): React.ReactNode 
       <input
         type="password"
         placeholder={placeholder}
-        className={className || `flex-1 py-3 px-5 outline-none text-sm bg-transparent`}
+        className={className || `flex-1 py-4 px-4 outline-none text-sm bg-transparent`}
       />
 
       <button className={`mx-2 text-lg`}>
