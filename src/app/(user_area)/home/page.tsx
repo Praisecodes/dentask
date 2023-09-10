@@ -106,7 +106,7 @@ const Page = (): JSX.Element => {
               ?
               (
                 <Empty title="No tasks has been found" image="/images/emptys/no-task.svg">
-                  Click to add <DLink href={'/'}>New task</DLink>
+                  Click to add <DLink href={'/home/new_task'}>New task</DLink>
                 </Empty>
               )
               :
