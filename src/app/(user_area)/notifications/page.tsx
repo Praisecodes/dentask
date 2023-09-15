@@ -9,8 +9,8 @@ const Page = (): React.ReactNode => {
   return (
     notifications.length < 1 ? (<NoNotification />) : (
       <>
-        {notifications.map((notification)=>(
-          <div className={`flex justify-between py-5 items-center`}>
+        {notifications.map((notification, index)=>(
+          <div key={index} className={`flex justify-between py-5 items-center`}>
             <section className={`flex items-center space-x-4`}>
               <Image  
                 src={notification.icon}
