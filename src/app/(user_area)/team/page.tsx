@@ -29,7 +29,7 @@ const Page = (): JSX.Element => {
         {
           teamList.length < 1 ?
             <Empty title="No teams has been created" image="/images/emptys/no-teams.svg">
-              Click to add <DLink href={'/'}>New team</DLink>
+              Click to add <DLink onClick={()=>{}}>New team</DLink>
             </Empty>
             :
             (null)
