@@ -2,13 +2,11 @@
 
 import Link from "next/link";
 
-const DLink = ({ href, children }: { href: any; children: any; }): JSX.Element => {
+const DLink = ({ children, onClick }: { children: any; onClick: () => any; }): JSX.Element => {
   return (
-    <Link href={href}>
-      <span className={`text-[#FFE5B1]`} style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
-        {children}
-      </span>
-    </Link>
+    <span onClick={onClick} className={`text-[#FFE5B1] cursor-pointer`} style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
+      {children}
+    </span>
   )
 }
 

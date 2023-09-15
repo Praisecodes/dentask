@@ -1,11 +1,11 @@
 'use client'
 
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { CiFileOn } from 'react-icons/ci';
 import { HiAtSymbol } from 'react-icons/hi';
 import { VscCalendar } from 'react-icons/vsc';
 import { AiOutlinePlus } from 'react-icons/ai';
-import { Empty } from "@/components/templates";
+import { Empty, NewTaskModal } from "@/components/templates";
 import { DLink, Button } from "@/components/atoms";
 
 const Page = (): JSX.Element => {
@@ -34,6 +34,9 @@ const Page = (): JSX.Element => {
   const [overdue, setOverdue] = useState<any[]>([]);
   const [completed, setCompleted] = useState<any[]>([]);
   const [filter, setFilter] = useState<string>("Upcoming");
+  const [newTaskModalOpen, setNewTaskModalOpen] = useState<boolean>(false);
+
+  const toggleModal = (setter: Dispatch<SetStateAction<boolean>>, value: boolean) => setter(!value);
 
   const [counts, setCounts] = useState<any[]>([
     {
@@ -52,6 +55,8 @@ const Page = (): JSX.Element => {
 
   return (
     <>
+      <NewTaskModal open={newTaskModalOpen} onClose={() => { toggleModal(setNewTaskModalOpen, newTaskModalOpen) }} />
+
       {/**Count Section */}
       <section className="w-full whitespace-nowrap overflow-x-auto max-w-full flex justify-center items-center">
         {taskMeasurements.map((taskMeasurement, index) => (
@@ -82,7 +87,7 @@ const Page = (): JSX.Element => {
                 Team task stored by priority
               </p>
             </div>
-            <Button icon={<AiOutlinePlus />} onClick={() => { }} disabled={false}>
+            <Button icon={<AiOutlinePlus />} onClick={() => { toggleModal(setNewTaskModalOpen, newTaskModalOpen) }} disabled={false}>
               Task
             </Button>
           </header>
@@ -106,7 +111,7 @@ const Page = (): JSX.Element => {
               ?
               (
                 <Empty title="No tasks has been found" image="/images/emptys/no-task.svg">
-                  Click to add <DLink href={'/new_task'}>New task</DLink>
+                  Click to add <DLink onClick={() => { toggleModal(setNewTaskModalOpen, newTaskModalOpen) }}>New task</DLink>
                 </Empty>
               )
               :
@@ -132,7 +137,7 @@ const Page = (): JSX.Element => {
               ?
               (
                 <Empty title="No announcements here" image="/images/emptys/no-task.svg">
-                  Click to add <DLink href={'/new_announcement'}>New annoncement</DLink>
+                  Click to add <DLink onClick={() => { }}>New annoncement</DLink>
                 </Empty>
               )
               :
@@ -165,7 +170,7 @@ const Page = (): JSX.Element => {
             ?
             (
               <Empty title="No teams has been created" image="/images/emptys/no-teams.svg">
-                Click to add <DLink href={'/new_team'}>New team</DLink>
+                Click to add <DLink onClick={() => { }}>New team</DLink>
               </Empty>
             )
             :
