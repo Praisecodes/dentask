@@ -16,7 +16,7 @@ const HeaderActions = (): JSX.Element => {
 
   useEffect(() => {
     setNotifs([]);
-    for (let index = 0; index < 3; index++) {
+    for (let index = 0; index < 4; index++) {
       setNotifs((notifs) => ([...notifs, Notifications[index]]))
     }
   }, []);
