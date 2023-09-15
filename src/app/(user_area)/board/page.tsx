@@ -5,7 +5,7 @@ import { DLink, Button } from "@/components/atoms";
 import { AiOutlinePlus } from "react-icons/ai";
 import { useState } from "react";
 
-const Page = ():JSX.Element => {
+const Page = (): JSX.Element => {
   const [boards, setBoards] = useState<any[]>([]);
 
   return (
@@ -25,11 +25,11 @@ const Page = ():JSX.Element => {
         </Button>
       </section>
 
-      <section className={`min-h-[50vh] flex ${boards.length < 1 && 'items-center' } my-2 justify-center`}>
+      <section className={`min-h-[50vh] flex ${boards.length < 1 && 'items-center'} my-2 justify-center`}>
         {
           boards.length < 1 ?
             <Empty title="No board has been created" image="/images/emptys/no-board.svg">
-              Create a board using <DLink href={'/'}>+Create Board</DLink> button
+              Create a board using <DLink onClick={() => { }}>+Create Board</DLink> button
             </Empty>
             :
             (null)
