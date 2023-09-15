@@ -14,7 +14,7 @@ const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => {
 
       <section className="w-[79vw] overflow-x-hidden">
         <header className="h-[12.4vh] px-6 flex justify-between items-center border-b border-b-[#455A6480]">
-          <h3 className="text-white text-xl">
+          <h3 className="text-white font-bold text-xl">
             {pathname == '/home' ? "Home Task" : pathname.split('/')[1].charAt(0).toUpperCase() + pathname.split('/')[1].slice(1,)}
           </h3>
           <SearchInput />
