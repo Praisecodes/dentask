@@ -1,0 +1,58 @@
+[
+  {
+    "id": "6392x394883jdx",
+    "icon": "/icons/mockup/accept.svg",
+    "title": "Team Task Completed",
+    "message": "Emmanuel completed Development On The Appoitment Manager",
+    "time": "Now",
+    "link": "/home"
+  },
+  {
+    "id": "daksdj-29382848",
+    "icon": "/icons/mockup/request.svg",
+    "title": "Join Request",
+    "message": "Martin requested to join Economics Team",
+    "time": "2hrs",
+    "link": "/home"
+  },
+  {
+    "id": "9982vhs9xjwea",
+    "icon": "/icons/mockup/group.svg",
+    "title": "Accepted Team Request",
+    "message": "John accepted Economics team Invite",
+    "time": "8hrs",
+    "link": "/home"
+  },
+  {
+    "id": "daksdj-29382848",
+    "icon": "/icons/mockup/request.svg",
+    "title": "Join Request",
+    "message": "Martin requested to join Economics Team",
+    "time": "2hrs",
+    "link": "/home"
+  },
+  {
+    "id": "6392x394883jdx",
+    "icon": "/icons/mockup/accept.svg",
+    "title": "Team Task Completed",
+    "message": "Emmanuel completed Development On The Appoitment Manager",
+    "time": "Now",
+    "link": "/home"
+  },
+  {
+    "id": "daksdj-29382848",
+    "icon": "/icons/mockup/request.svg",
+    "title": "Join Request",
+    "message": "Martin requested to join Economics Team",
+    "time": "2hrs",
+    "link": "/home"
+  },
+  {
+    "id": "9982vhs9xjwea",
+    "icon": "/icons/mockup/group.svg",
+    "title": "Accepted Team Request",
+    "message": "John accepted Economics team Invite",
+    "time": "8hrs",
+    "link": "/home"
+  }
+]
