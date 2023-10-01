@@ -21,7 +21,7 @@ const Page = ():JSX.Element => {
         /> <br />
 
         <button className="bg-[#FFE5B1] hover:bg-[#FFE5B1] text-black btn w-full rounded-md normal-case text-sm">
-          Change Password
+          Continue
         </button>
       </form>
     </section>
