@@ -62,7 +62,7 @@ const Page = (): JSX.Element => {
       <NewAnnouncementModal open={newAnnouncementModalOpen} onClose={() => { toggleModal(setNewAnnouncementModalOpen, newAnnouncementModalOpen) }} />
 
       {/**Count Section */}
-      <section className="w-full whitespace-nowrap overflow-x-auto max-w-full flex justify-center items-center">
+      <section className="w-fit mx-auto whitespace-nowrap overflow-x-auto max-w-full flex items-center">
         {taskMeasurements.map((taskMeasurement, index) => (
           <div key={index} className={`bg-[#2C3542] text-[#FFFFFF80] flex rounded-md items-center mx-2 py-5 w-[18rem] px-4`}>
             <p className="text-3xl bg-[#FFE5B14D] p-3 text-[#FFE5B1] border border-[#FFE5B1] rounded-full">
