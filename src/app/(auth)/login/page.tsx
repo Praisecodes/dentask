@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 
 const Page = (): JSX.Element => {
   const router = useRouter();
-  const handleLogin = async (e:any) => {
+  const handleLogin = async (e: any) => {
     e.preventDefault();
     router.push('/home');
   }
@@ -47,9 +47,9 @@ const Page = (): JSX.Element => {
           </Link>
         </p>
         <br />
-        <button 
+        <button
           className={`btn w-full text-black text-base bg-[#FFE5B1] rounded-md normal-case hover:bg-[#FFE5B1]`}
-          onClick={(e)=>{handleLogin(e)}}
+          onClick={(e) => { handleLogin(e) }}
         >
           Login
         </button> <br /><br />
@@ -63,6 +63,10 @@ const Page = (): JSX.Element => {
         <button className="text-[#FFE5B1] text-base border-2 normal-case rounded-md border-[#FFE5B1] btn w-full bg-transparent hover:bg-transparent hover:border-[#FFE5B1]">
           Google
         </button>
+
+        <p className={`py-2 lg:hidden`}>
+          Don&apos;t have an account? <Link href={`/signup`}> <span className={`text-[#FFE5B1] underline`}>Get One Here</span> </Link>
+        </p>
       </form>
 
     </section>

@@ -45,12 +45,12 @@ const Page = (): JSX.Element => {
         /> <br />
 
         <p className="flex items-center text-sm">
-        <input type='checkbox' className='checkbox' />
-        <span className="px-2">
-          I have read & agreed to DenTask <Link href={'/'} className="text-[#FFE5B1]">
-            Privacy Policy, Terms & Conditions
-          </Link>
-        </span>
+          <input type='checkbox' className='checkbox' />
+          <span className="px-2">
+            I have read & agreed to DenTask <Link href={'/'} className="text-[#FFE5B1]">
+              Privacy Policy, Terms & Conditions
+            </Link>
+          </span>
         </p> <br />
 
         <button className={`btn normal-case bg-[#FFE5B1] text-black text-sm w-full rounded-md hover:bg-[#FFE5B1]`}>
@@ -68,6 +68,10 @@ const Page = (): JSX.Element => {
         <button className="normal-case text-[#FFE5B1] btn border-2 border-[#FFE5B1] rounded-md w-full bg-transparent hover:bg-transparent hover:border-[#FFE5B1]">
           Google
         </button>
+
+        <p className={`py-2 lg:hidden`}>
+          Already have an account? <Link href={`/login`}> <span className={`text-[#FFE5B1] underline`}>Login Here</span> </Link>
+        </p>
       </form>
     </section>
   )

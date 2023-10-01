@@ -11,20 +11,20 @@ const SideView = (): JSX.Element => {
     <section className="bg-[#FFE5B1] hidden flex-1 lg:flex flex-col justify-center items-center">
       <div>
         <h3 className="text-xl font-bold text-[#212832]">
-          Welcome {pathname == '/' ? 'Back' : ''} To
+          Welcome {pathname == '/login' ? 'Back' : ''} To
         </h3>
         <Image width={10} height={10} src="/images/logo.svg" alt="Dentask Logo" className="w-[16rem]" />
       </div>
 
       <p className={`text-base text-black py-2`}>
-        {pathname=='/'?'Don\'t have an account?':'Already have an account?'}
+        {pathname=='/login'?'Don\'t have an account?':'Already have an account?'}
       </p>
 
       <Link
-        href={pathname == '/' ? '/signup' : '/'}
+        href={pathname == '/login' ? '/signup' : '/login'}
         className={`btn w-[17rem] duration-100 text-sm bg-transparent hover:bg-transparent text-black`}
       >
-        {pathname == '/' ? 'Create Account' : 'LOGIN'}
+        {pathname == '/login' ? 'Create Account' : 'LOGIN'}
       </Link>
     </section>
   )
