@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Home",
+    "icon": "/icons/home",
+    "route": "/home"
+  },
+  {
+    "title": "Team",
+    "icon": "/icons/team",
+    "route": "/team"
+  },
+  {
+    "title": "Board",
+    "icon": "/icons/board",
+    "route": "/board"
+  },
+  {
+    "title": "Settings",
+    "icon": "/icons/settings",
+    "route": "/settings"
+  }
+]
