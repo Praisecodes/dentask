@@ -69,7 +69,7 @@ const Page = (): JSX.Element => {
           Google
         </button>
 
-        <p className={`py-2 lg:hidden`}>
+        <p className={`py-2 text-sm lg:hidden`}>
           Already have an account? <Link href={`/login`}> <span className={`text-[#FFE5B1] underline`}>Login Here</span> </Link>
         </p>
       </form>
