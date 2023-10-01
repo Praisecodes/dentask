@@ -5,7 +5,7 @@ import { CiFileOn } from 'react-icons/ci';
 import { HiAtSymbol } from 'react-icons/hi';
 import { VscCalendar } from 'react-icons/vsc';
 import { AiOutlinePlus } from 'react-icons/ai';
-import { Empty, NewTaskModal, NewTeamModal } from "@/components/templates";
+import { Empty, NewAnnouncementModal, NewTaskModal, NewTeamModal } from "@/components/templates";
 import { DLink, Button } from "@/components/atoms";
 
 const Page = (): JSX.Element => {
@@ -36,6 +36,7 @@ const Page = (): JSX.Element => {
   const [filter, setFilter] = useState<string>("Upcoming");
   const [newTaskModalOpen, setNewTaskModalOpen] = useState<boolean>(false);
   const [newTeamModalOpen, setNewTeamModalOpen] = useState<boolean>(false);
+  const [newAnnouncementModalOpen, setNewAnnouncementModalOpen] = useState<boolean>(false);
 
   const toggleModal = (setter: Dispatch<SetStateAction<boolean>>, value: boolean) => setter(!value);
 
@@ -58,7 +59,7 @@ const Page = (): JSX.Element => {
     <>
       <NewTaskModal open={newTaskModalOpen} onClose={() => { toggleModal(setNewTaskModalOpen, newTaskModalOpen) }} />
       <NewTeamModal open={newTeamModalOpen} onClose={() => { toggleModal(setNewTeamModalOpen, newTeamModalOpen) }} />
-      {/* <NewTeamModal open={newTeamModalOpen} onClose={() => { toggleModal(setNewTeamModalOpen, newTeamModalOpen) }} /> */}
+      <NewAnnouncementModal open={newAnnouncementModalOpen} onClose={() => { toggleModal(setNewAnnouncementModalOpen, newAnnouncementModalOpen) }} />
 
       {/**Count Section */}
       <section className="w-full whitespace-nowrap overflow-x-auto max-w-full flex justify-center items-center">
@@ -140,7 +141,7 @@ const Page = (): JSX.Element => {
               ?
               (
                 <Empty title="No announcements here" image="/images/emptys/no-task.svg">
-                  Click to add <DLink onClick={() => { }}>New annoncement</DLink>
+                  Click to add <DLink onClick={() => { toggleModal(setNewAnnouncementModalOpen, newAnnouncementModalOpen) }}>New annoncement</DLink>
                 </Empty>
               )
               :

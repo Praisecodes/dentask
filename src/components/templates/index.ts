@@ -6,6 +6,7 @@ import SettingsBoard from "./settings_board";
 import NoNotification from "./no-notification";
 import NewTaskModal from "./modals/newTaskModal";
 import NewTeamModal from "./modals/newTeamModal";
+import NewAnnouncementModal from "./modals/newAnnouncementModal";
 
 export {
   SideView,
@@ -15,5 +16,6 @@ export {
   SettingsBoard,
   NoNotification,
   NewTaskModal,
-  NewTeamModal
+  NewTeamModal,
+  NewAnnouncementModal
 };
