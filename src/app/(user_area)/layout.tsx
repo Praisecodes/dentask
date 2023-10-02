@@ -23,7 +23,7 @@ const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => {
           <HeaderActions />
         </header>
 
-        <main className={`overflow-y-auto h-[87.6vh] lg:px-6 px-3 py-3 lg:mb-0 pb-24`}>
+        <main className={`overflow-y-auto h-[87.6vh] lg:px-6 px-3 py-3 lg:mb-0 lg:pb-3 pb-24`}>
           {children}
         </main>
 
