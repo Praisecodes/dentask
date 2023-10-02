@@ -12,7 +12,7 @@ const Page = (): JSX.Element => {
 
   return (
     <SettingsBoard title="Notification Settings">
-      <div className={`w-full py-4 flex justify-between items-center border-b border-b-[#8CAAB933]`}>
+      <div className={`w-full space-x-2 py-4 flex justify-between items-center border-b border-b-[#8CAAB933]`}>
         <p className={`text-white text-base font-bold`}>
           General email notification
         </p>
@@ -20,7 +20,7 @@ const Page = (): JSX.Element => {
         <input type="checkbox" onChange={() => { setGeneralNotif(!generalNotif) }} className={`toggle`} checked={generalNotif} />
       </div>
 
-      <div className={`w-full py-6 flex justify-between items-center border-b border-b-[#8CAAB933]`}>
+      <div className={`w-full space-x-2 py-6 flex justify-between items-center border-b border-b-[#8CAAB933]`}>
         <p className={`text-white text-base font-bold`}>
           Email for every new user joining in team
         </p>
@@ -28,7 +28,7 @@ const Page = (): JSX.Element => {
         <input type="checkbox" onChange={() => { setNewUserNotif(!newUserNotif) }} className={`toggle`} checked={newUserNotif} />
       </div>
 
-      <div className={`w-full py-6 flex justify-between items-center border-b border-b-[#8CAAB933]`}>
+      <div className={`w-full space-x-2 py-6 flex justify-between items-center border-b border-b-[#8CAAB933]`}>
         <p className={`text-white text-base font-bold`}>
           Email when team member create new task
         </p>
