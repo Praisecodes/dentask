@@ -8,7 +8,7 @@ const Navbar = () => {
         <Image width={10} height={10} src="/images/logo_var.svg" alt="Logo" />
       </div>
 
-      <Link href={`/login`} className=" text-white border-[#FFE5B1] border bg-[#858173] px-8 py-3 ">
+      <Link href={`/signup`} className=" text-white border-[#FFE5B1] border bg-[#858173] px-8 py-3 ">
         Get Started
       </Link>
     </header>
