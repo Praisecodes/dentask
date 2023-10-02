@@ -18,8 +18,8 @@ const Page = (): JSX.Element => {
             to mingle with team members
           </p>
         </div>
-        <div className="items-center mt-10 w-4/5 m-auto">
-          <Image width={10} height={10} src="/images/Dashboard.png" alt="Logo" />
+        <div className="items-center mt-10 lg:w-4/5 w-full m-auto">
+          <Image width={900} height={900} src="/images/Dashboard.png" alt="Logo" className={`w-full object-cover object-center`} />
         </div>
 
       </div>
