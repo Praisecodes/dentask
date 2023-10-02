@@ -39,7 +39,7 @@ const Page = (): JSX.Element => {
         </p>
         <Input
           placeholder="Your Password"
-          type="email"
+          type="password"
           icon={<CiLock />}
           width="100%"
         /> <br />
