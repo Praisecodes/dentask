@@ -30,7 +30,7 @@ const SettingsMenu = (): JSX.Element => {
 
   return (
     <section className={`lg:w-[22vw] w-full`}>
-      <div className={`flex items-center justify-between`}>
+      <div className={`flex items-center mb-3 lg:mb-0 justify-between`}>
         <section>
           <h2 className={`lg:text-2xl text-xl text-white`}>
             Settings
