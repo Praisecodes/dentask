@@ -22,10 +22,10 @@ const HeaderActions = (): JSX.Element => {
   }, []);
 
   return (
-    <section className="flex h-full items-center">
+    <section className="flex h-full space-x-2 items-center">
       <div
         onClick={() => { setNewTaskModalIsOpen(!newTaskModalIsOpen) }}
-        className="text-[#FFE5B1] relative mx-3 cursor-pointer bg-[#2B3441] p-3 rounded-full text-lg"
+        className="text-[#FFE5B1] relative cursor-pointer bg-[#2B3441] p-3 rounded-full lg:text-lg text-base"
       >
         <AiOutlinePlus />
         <div className={`absolute ${newTaskModalIsOpen ? "block" : "hidden"} rounded-sm right-0 w-[16rem] shadow-md py-2 px-4 bg-[#2B3441] top-[112%]`}>
@@ -89,7 +89,7 @@ const HeaderActions = (): JSX.Element => {
       </div>
 
       <div
-        className="text-[#FFE5B1] cursor-pointer relative mx-3 px-4 py-2 text-xl"
+        className="text-[#FFE5B1] cursor-pointer relative px-4 py-2 lg:text-xl text-lg"
         onClick={() => { setNotificationModalIsOpen(!notificationModalIsOpen) }}
       >
         <IoNotificationsOutline />
@@ -127,7 +127,7 @@ const HeaderActions = (): JSX.Element => {
 
       <div
         onClick={() => { setProfileModalIsOpen(!profileModalIsOpen) }}
-        className="px-4 py-2 cursor-pointer relative rounded-full bg-[#8CAAB9] mx-3 text-black text-lg"
+        className="px-4 py-2 cursor-pointer relative rounded-full bg-[#8CAAB9] text-black lg:text-lg text-base"
       >
         C
 

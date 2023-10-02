@@ -65,12 +65,12 @@ const Page = (): JSX.Element => {
       <section className="w-fit mx-auto whitespace-nowrap overflow-x-auto max-w-full flex items-center">
         {taskMeasurements.map((taskMeasurement, index) => (
           <div key={index} className={`bg-[#2C3542] text-[#FFFFFF80] flex rounded-md items-center mx-2 py-5 w-[18rem] px-4`}>
-            <p className="text-3xl bg-[#FFE5B14D] p-3 text-[#FFE5B1] border border-[#FFE5B1] rounded-full">
+            <p className="lg:text-3xl text-2xl bg-[#FFE5B14D] p-3 text-[#FFE5B1] border border-[#FFE5B1] rounded-full">
               {taskMeasurement.icon}
             </p>
-            <h3 className="text-lg px-3">
+            <h3 className="lg:text-lg text-base px-3">
               {taskMeasurement.title} <br />
-              <span className="text-white text-2xl">
+              <span className="text-white lg:text-2xl text-xl">
                 {taskMeasurement.count}
               </span>
             </h3>
@@ -79,15 +79,15 @@ const Page = (): JSX.Element => {
       </section>
 
       {/**Task Priorities and Announcement Section */}
-      <section className={`py-6 my-2 flex justify-between items-center w-full`}>
+      <section className={`py-6 my-2 lg:space-y-0 space-y-8 flex lg:flex-row flex-col justify-between items-center w-full`}>
         {/**Task Priorities */}
-        <div className={`py-4 px-4 border flex flex-col border-[#8CAAB944] rounded-md w-[49%] h-[23rem]`}>
+        <div className={`py-4 px-4 border flex flex-col border-[#8CAAB944] rounded-md lg:w-[49%] w-full h-[23rem]`}>
           <header className={`w-full flex justify-between items-center`}>
             <div>
-              <h3 className={`text-xl text-white`}>
+              <h3 className={`lg:text-xl text-base text-white`}>
                 Task Priorities
               </h3>
-              <p className={`text-[#FFFFFF66]`}>
+              <p className={`text-[#FFFFFF66] lg:text-base text-sm`}>
                 Team task stored by priority
               </p>
             </div>
@@ -96,14 +96,14 @@ const Page = (): JSX.Element => {
             </Button>
           </header>
 
-          <section className={`flex my-2 w-[80%] justify-between items-center`}>
+          <section className={`flex my-2 w-full overflow-x-auto space-x-4 items-center`}>
             {counts.map((count, index) => (
               <div
                 key={index}
                 className={`rounded-sm py-2 cursor-pointer px-3 ${count.title == filter ? 'bg-[#2B3441] text-white' : 'bg-transparent text-[#FFFFFF66]'} border border-[#2B3441]`}
                 onClick={() => { setFilter(count.title) }}
               >
-                <p>
+                <p className={`whitespace-nowrap`}>
                   {count.count} {' '} {count.title}
                 </p>
               </div>
@@ -124,13 +124,13 @@ const Page = (): JSX.Element => {
         </div>
 
         {/**Announcement */}
-        <div className={`py-4 px-4 border flex flex-col border-[#8CAAB944] rounded-md w-[49%] h-[23rem]`}>
+        <div className={`py-4 px-4 border flex flex-col border-[#8CAAB944] rounded-md lg:w-[49%] w-full h-[23rem]`}>
           <header className={`w-full flex justify-between items-center`}>
             <div>
-              <h3 className={`text-xl text-white`}>
+              <h3 className={`lg:text-xl text-base text-white`}>
                 Announcement
               </h3>
-              <p className={`text-[#FFFFFF66]`}>
+              <p className={`text-[#FFFFFF66] lg:text-base text-sm`}>
                 From personal and Team Reading
               </p>
             </div>
@@ -155,7 +155,7 @@ const Page = (): JSX.Element => {
         {/**Header Section */}
         <div className={`flex justify-between w-full items-center`}>
           <article className={`text-white`}>
-            <h3 className={`text-2xl py-1`}>
+            <h3 className={`lg:text-2xl text-lg py-1`}>
               My Team
             </h3>
             <p className={`text-sm text-[#FFFFFF55]`}>
