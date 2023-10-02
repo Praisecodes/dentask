@@ -27,7 +27,7 @@ const SettingsMenu = (): JSX.Element => {
   ]);
 
   return (
-    <section className={`w-[22vw]`}>
+    <section className={`lg:w-[22vw] w-full`}>
       <h2 className={`text-2xl text-white`}>
         Settings
       </h2>
@@ -35,7 +35,7 @@ const SettingsMenu = (): JSX.Element => {
         You can find all settings here
       </p>
 
-      <div>
+      <div className={`lg:w-full w-0 duration-150 overflow-hidden lg:h-fit h-0`}>
         {settingsMenus.map((settingsMenu, index)=>(
           <Link key={index} href={settingsMenu.route}>
             <p className={`flex rounded-sm w-[75%] items-center ${settingsMenu.route == pathname && 'bg-[#475464] text-white'} text-[#FFFFFF55] my-4 py-3 text-base`}>

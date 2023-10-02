@@ -12,10 +12,10 @@ const Page = (): JSX.Element => {
     <main className={`flex flex-col`}>
       <section className={`flex justify-between items-center`}>
         <div>
-          <h2 className={`text-2xl text-white`}>
+          <h2 className={`lg:text-2xl text-lg text-white`}>
             Task Board
           </h2>
-          <p className={`text-[#ffffff66]`}>
+          <p className={`text-[#ffffff66] lg:block hidden lg:text-base text-sm`}>
             Create a board and complete tasks using board
           </p>
         </div>

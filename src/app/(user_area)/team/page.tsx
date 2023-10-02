@@ -12,10 +12,10 @@ const Page = (): JSX.Element => {
     <main className={`flex flex-col`}>
       <section className={`flex justify-between items-center`}>
         <div>
-          <h2 className={`text-2xl text-white`}>
+          <h2 className={`lg:text-2xl md:text-xl text-lg text-white`}>
             My Team
           </h2>
-          <p className={`text-[#ffffff66]`}>
+          <p className={`text-[#ffffff66] lg:text-base text-sm`}>
             0 Total Teams are Added
           </p>
         </div>

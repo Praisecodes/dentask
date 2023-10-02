@@ -7,7 +7,7 @@ const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => {
   const pathname = usePathname();
 
   return (
-    <main className={`flex`}>
+    <main className={`flex lg:flex-row flex-col`}>
       <SettingsMenu />
       <section className={`flex-1 px-3 max-h-[83.92vh] overflow-y-auto`}>
         {children}
