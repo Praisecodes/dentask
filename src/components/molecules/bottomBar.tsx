@@ -9,7 +9,7 @@ const BottomBar = (): React.ReactNode => {
   const pathname = usePathname();
 
   return (
-    <nav className={`absolute bottom-0 left-0 w-full overflow-hidden flex duration-200 rounded-t-xl lg:h-0 h-fit lg:py-0 py-3 md:px-7 px-4 items-center justify-between bg-[#2B3441]`}>
+    <nav className={`absolute bottom-0 left-0 font-sans-expanded w-full overflow-hidden flex duration-200 rounded-t-xl lg:h-0 h-fit lg:py-0 py-3 md:px-7 px-4 items-center justify-between bg-[#2B3441]`}>
       {NavOptions.map((option, index)=>(
         <Link key={index} href={option.route}>
           <div>

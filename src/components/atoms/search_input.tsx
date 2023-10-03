@@ -2,7 +2,7 @@ import { BiSearch } from 'react-icons/bi';
 
 const SearchInput = (): JSX.Element => {
   return (
-    <div className="flex items-center input w-[20rem] bg-[#2B3441]">
+    <div className="flex font-epilogue items-center input w-[20rem] bg-[#2B3441]">
       <button className="text-white text-xl">
         <BiSearch />
       </button>

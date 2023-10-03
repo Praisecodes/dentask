@@ -9,7 +9,7 @@ const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => {
   const pathname = usePathname();
 
   return (
-    <main className="bg-[#212832] flex h-[100vh] w-[100vw]">
+    <main className="bg-[#212832] font-comfortaa flex h-[100vh] w-[100vw]">
       <SideBar />
 
       <section className="lg:w-[79vw] relative lg:mb-0 w-full overflow-x-hidden">

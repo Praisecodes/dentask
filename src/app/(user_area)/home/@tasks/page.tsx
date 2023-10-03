@@ -46,7 +46,7 @@ const Page = (): React.ReactNode => {
         {counts.map((count, index) => (
           <div
             key={index}
-            className={`rounded-sm py-2 cursor-pointer px-3 ${count.title == filter ? 'bg-[#2B3441] text-white' : 'bg-transparent text-[#FFFFFF66]'} border border-[#2B3441]`}
+            className={`rounded-sm font-epilogue py-2 cursor-pointer px-3 ${count.title == filter ? 'bg-[#2B3441] text-white' : 'bg-transparent text-[#FFFFFF66]'} border border-[#2B3441]`}
             onClick={() => { setFilter(count.title) }}
           >
             <p className={`whitespace-nowrap`}>
