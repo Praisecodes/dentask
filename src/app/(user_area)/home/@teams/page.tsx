@@ -1,22 +1,24 @@
 "use client";
 
-import { useState, Dispatch, SetStateAction } from "react";
+import { useState } from "react";
 import { Button, DLink } from "@/components/atoms";
 import { AiOutlinePlus } from "react-icons/ai";
-import { Empty } from "@/components/templates";
+import { Empty, NewTeamModal } from "@/components/templates";
 
 const Page = (): React.ReactNode => {
-  const [newTeamModalOpen, setNewTeamModalOpen] = useState<boolean>(false);
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [teamList, setTeamList] = useState<any[]>([]);
 
-  const toggleModal = (setter: Dispatch<SetStateAction<boolean>>, value: boolean) => setter(!value);
+  const toggleModal = () => setModalOpen(!modalOpen);
   return (
     <>
+      <NewTeamModal open={modalOpen} onClose={toggleModal} />
+
       <section className={`w-full py-2 px-5 border border-[#8CAAB944] rounded-md h-[19rem]`}>
         {/**Header Section */}
         <div className={`flex justify-between w-full items-center`}>
           <article className={`text-white`}>
-            <h3 className={`lg:text-2xl text-lg py-1`}>
+            <h3 className={`lg:text-xl text-lg py-1`}>
               My Team
             </h3>
             <p className={`text-sm text-[#FFFFFF55]`}>
@@ -24,7 +26,7 @@ const Page = (): React.ReactNode => {
             </p>
           </article>
 
-          <Button icon={<AiOutlinePlus />} onClick={() => { toggleModal(setNewTeamModalOpen, newTeamModalOpen) }} disabled={false}>
+          <Button icon={<AiOutlinePlus />} onClick={() => { toggleModal() }} disabled={false}>
             Team
           </Button>
         </div>
@@ -35,7 +37,7 @@ const Page = (): React.ReactNode => {
             ?
             (
               <Empty title="No teams has been created" image="/images/emptys/no-teams.svg">
-                Click to add <DLink onClick={() => { toggleModal(setNewTeamModalOpen, newTeamModalOpen) }}>New team</DLink>
+                Click to add <DLink onClick={() => { toggleModal() }}>New team</DLink>
               </Empty>
             )
             :
