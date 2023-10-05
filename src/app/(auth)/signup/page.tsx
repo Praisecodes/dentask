@@ -1,10 +1,14 @@
+"use client";
+
 import { Input } from "@/components/molecules";
 import { HiOutlineUser } from 'react-icons/hi';
 import { HiOutlineEnvelope } from 'react-icons/hi2';
 import { CiLock } from 'react-icons/ci';
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Page = (): JSX.Element => {
+  const router = useRouter();
   return (
     <section className="w-full flex flex-col items-center">
       <h2 className="text-white text-2xl lg:w-[80%] w-full">
@@ -53,7 +57,7 @@ const Page = (): JSX.Element => {
           </span>
         </p> <br />
 
-        <button className={`btn normal-case bg-[#FFE5B1] text-black text-sm w-full rounded-md hover:bg-[#FFE5B1]`}>
+        <button onClick={()=>{router.push('/home')}} className={`btn normal-case bg-[#FFE5B1] text-black text-sm w-full rounded-md hover:bg-[#FFE5B1]`}>
           Create Account
         </button> <br /> <br />
 
