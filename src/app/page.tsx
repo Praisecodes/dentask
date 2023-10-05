@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const Page = (): JSX.Element => {
   return (
-    <main className="bg-gradient-to-r from-[#474948] to-[#29313b]">
+    <main className="bg-gradient-to-r font-epilogue from-[#474948] to-[#29313b]">
       <div className="lg:px-12 px-4 pt-10">
         <Navbar /> <br />
         <div>
-          <h1 className="lg:text-[70px] text-[30px] text-white text-center pt-8">
+          <h1 className="lg:text-[70px] font-sans-expanded text-[30px] text-white text-center pt-8">
             The Easiest Way To
           </h1>
 
