@@ -15,7 +15,7 @@ const Page = (): JSX.Element => {
         Create your account
       </h2>
 
-      <form className="lg:w-[80%] w-full">
+      <form onSubmit={(e)=>{e.preventDefault()}} className="lg:w-[80%] w-full">
         <br />
         <p className={`py-2`}>
           Full Name
